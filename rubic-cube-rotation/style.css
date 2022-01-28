@@ -31,88 +31,89 @@
   }
 }
 
-#small-element-red {
+.small-element-red {
   width: 80px;
   height: 80px;
   /*transform-style: preserve-3d;
   transition: transform 1.5s;
   transform: rotate3d(1, 1, 1, 30deg);*/
-  margin: 60px auto;
+  
   background: red;
 }
 
-#small-element-yellow {
+.small-element-yellow {
   width: 80px;
   height: 80px;
   /*transform-style: preserve-3d;
   transition: transform 1.5s;
   transform: rotate3d(1, 1, 1, 30deg);*/
-  margin: 60px auto;
+  
   background: yellow;
 }
 
-#small-element-green {
+.small-element-green {
   width: 80px;
   height: 80px;
   /*transform-style: preserve-3d;
   transition: transform 1.5s;
   transform: rotate3d(1, 1, 1, 30deg);*/
-  margin: 60px auto;
+ 
   background: green;
 }
-#small-element-blue {
+.small-element-blue {
   width: 80px;
   height: 80px;
   /*transform-style: preserve-3d;
   transition: transform 1.5s;
   transform: rotate3d(1, 1, 1, 30deg);*/
-  margin: 60px auto;
+  
   background: blue;
 }
-#small-element-pink {
+.small-element-pink {
   width: 80px;
   height: 80px;
   /*transform-style: preserve-3d;
   transition: transform 1.5s;
   transform: rotate3d(1, 1, 1, 30deg);*/
-  margin: 60px auto;
+ 
   background: pink;
 }
-#small-element-purple {
+.small-element-purple {
   width: 80px;
   height: 80px;
   /*transform-style: preserve-3d;
   transition: transform 1.5s;
   transform: rotate3d(1, 1, 1, 30deg);*/
-  margin: 60px auto;
+  
   background: purple;
 }
-#small-element-cyan {
+.small-element-cyan {
   width: 80px;
   height: 80px;
   /*transform-style: preserve-3d;
   transition: transform 1.5s;
   transform: rotate3d(1, 1, 1, 30deg);*/
-  margin: 60px auto;
+ 
   background: cyan;
 }
-#small-element-orange {
+
+.small-element-orange {
   width: 80px;
   height: 80px;
   /*transform-style: preserve-3d;
   transition: transform 1.5s;
   transform: rotate3d(1, 1, 1, 30deg);*/
-  margin: 60px auto;
+  
   background: orange;
 }
 
-#small-element-magenta {
+.small-element-magenta {
   width: 80px;
   height: 80px;
   /*transform-style: preserve-3d;
   transition: transform 1.5s;
   transform: rotate3d(1, 1, 1, 30deg);*/
-  margin: 60px auto;
+  
   background: magenta;
 }
 
@@ -133,35 +134,35 @@
   position: absolute;
   backface-visibility: inherit;
   font-size: 60px;
-  color: black;
+  color: white;
 }
 
 .front {
-  background: rgba(90, 90, 90, 0.7);
+ 
   transform: translateZ(120px);
 }
 
 .back {
-  background: rgba(0, 210, 0, 0.7);
+  
   transform: rotateY(180deg) translateZ(120px);
 }
 
 .right {
-  background: rgba(210, 0, 0, 0.7);
+
   transform: rotateY(90deg) translateZ(120px);
 }
 
 .left {
-  background: rgba(0, 0, 210, 0.7);
+  
   transform: rotateY(-90deg) translateZ(120px);
 }
 
 .top {
-  background: rgba(210, 210, 0, 0.7);
+ 
   transform: rotateX(90deg) translateZ(120px);
 }
 
 .bottom {
-  background: rgba(210, 0, 210, 0.7);
+  
   transform: rotateX(-90deg) translateZ(120px);
 }
