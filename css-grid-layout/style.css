@@ -1,42 +1,62 @@
 .item1 {
   grid-area: side-title;
+  background-color: yellow;
 }
 .item2 {
   grid-area: nav1;
+  background-color: pink;
 }
 .item3 {
   grid-area: nav2;
+  background-color: pink;
 }
 .item4 {
   grid-area: nav3;
+  background-color: pink;
 }
-.item5 {
-  grid-area: post-title;
+.item-main1 {
+  display: grid;
+  grid-area: main1;
 }
-.item6 {
-  grid-area: side-bar;
-}
-.item7 {
-  grid-area: right;
-}
-.item8 {
-  grid-area: footer;
+.item-main2 {
+  display: grid;
+  grid-area: main2;
 }
 
-.grid-container {
+.item5 {
+  grid-area: post-title;
+  background-color: lightblue;
+}
+
+.grid-container-top {
   display: grid;
-  grid-template-areas:
-    "side-title side-title side-title nav1 nav2 nav3"
-    "post-title post-title post-title post-title side-bar side-bar"
-    "menu footer footer footer footer footer";
+  grid-template-areas: "side-title side-title side-title nav1 nav2 nav3";
   grid-gap: 10px;
-  background-color: #2196f3;
+
   padding: 10px;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
+.grid-container-top > div {
   padding: 20px 0;
   font-size: 30px;
+}
+
+.grid-container-main {
+  display: grid;
+  grid-template-areas: "main1 main1 main1 main2 main2";
+  grid-gap: 10px;
+
+  padding: 10px;
+}
+
+.grid-container-main > div {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container-main1 {
+  display: grid;
+  grid-template-areas: "post-title post-title post-title post-title";
+
+  padding: 10px;
 }
