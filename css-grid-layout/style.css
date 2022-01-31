@@ -28,12 +28,27 @@
   background-color: lightblue;
 }
 
+.item6{
+  grid-area: side-bar;
+  background-color: orange;
+}
+.item7{
+  grid-area: ads;
+  background-color: darkgreen;
+}
+
+.item8{
+  grid-area: other-stuff;
+  background-color: purple;
+}
+
+
 .grid-container-top {
   display: grid;
   grid-template-areas: "side-title side-title side-title nav1 nav2 nav3";
   grid-gap: 10px;
 
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 .grid-container-top > div {
@@ -46,11 +61,11 @@
   grid-template-areas: "main1 main1 main1 main2 main2";
   grid-gap: 10px;
 
-  padding: 10px;
+  padding-top: 10px;
 }
 
 .grid-container-main > div {
-  padding: 20px 0;
+  /*padding: 20px 0;*/
   font-size: 30px;
 }
 
@@ -58,5 +73,12 @@
   display: grid;
   grid-template-areas: "post-title post-title post-title post-title";
 
-  padding: 10px;
+  /*padding: 10px;*/
+}
+
+.grid-container-main2 {
+  display: grid;
+  grid-template-areas: "side-bar ads other-stuff";
+
+  /*padding: 10px;*/
 }
