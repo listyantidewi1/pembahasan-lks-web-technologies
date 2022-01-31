@@ -9,4 +9,11 @@ function setImage(realimage) {
 function setFilter(filteredImage) {
   var image = document.getElementsByName("image-filter")[0];
   image.style.filter = filteredImage.options[filteredImage.selectedIndex].value;
+  let display = "inline-block";
+
+  if (filteredImage.value == "filter") {
+    display = "none";
+  }
+
+  image.style.display = display;
 }
