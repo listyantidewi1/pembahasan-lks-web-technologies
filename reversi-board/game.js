@@ -1,5 +1,3 @@
-//www.101Computing.net/othello-game/
-
 var player = 1; //1 for White, 2 for Black
 var grid = [
   [0, 0, 0, 0, 0, 0, 0, 0],
@@ -60,6 +58,11 @@ function refreshGrid() {
 function resetGrid() {
   //Reset all values to 0 in the grid array
   //ADD CODE HERE
+  for (var row = 0; row < 8; row++) {
+    for (var col = 0; col < 8; col++) {
+      grid[row][col] = 0;
+    }
+  }
 }
 
 refreshGrid();
