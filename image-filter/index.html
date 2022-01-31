@@ -1,26 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link
-      class="jsbin"
-      href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script
-      class="jsbin"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
-    ></script>
-    <script
-      class="jsbin"
-      src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"
-    ></script>
     <script src="script.js"></script>
     <meta charset="utf-8" />
     <title>JS Bin</title>
-    <!--[if IE]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
     <style>
       article,
       aside,
@@ -30,13 +14,36 @@
       hgroup,
       menu,
       nav,
-      section {
+      s section {
         display: block;
       }
     </style>
   </head>
   <body>
-    <input type="file" onchange="readURL(this);" />
-    <img id="blah" src="#" alt="your image" />
+    <img
+      id="image-swap"
+      name="image-swap"
+      src="img/athena.jpg"
+      alt="real image"
+    />
+    <img
+      class="darken"
+      id="image-filter"
+      name="image-filter"
+      src=""
+      alt="filtered image"
+    /><br />
+    <select name="image" id="image" onchange="setImage(this);">
+      <option value="image">Image</option>
+      <option value="img/athena.jpg">Athena</option>
+      <option value="img/mona-lisa.jpg">Monalisa</option>
+      <option value="img/theKiss.jpg">The Kiss</option>
+      <option value="img/young-pearl.jpg">Young Pearl</option>
+    </select>
+    <select name="filter" id="filter" onchange="setFilter(this);">
+      <option value="filter">Filter</option>
+      <option value="brightness(0.4)">Darken</option>
+      <option value="brightness(1.3)">Lighten</option>
+    </select>
   </body>
 </html>

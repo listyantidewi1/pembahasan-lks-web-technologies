@@ -1,14 +1,12 @@
-function readURL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
+function setImage(realimage) {
+  var image = document.getElementsByName("image-swap")[0];
+  image.src = realimage.options[realimage.selectedIndex].value;
 
-        reader.onload = function (e) {
-            $('#blah')
-                .attr('src', e.target.result)
-                .width(150)
-                .height(200);
-        };
+  var image2 = document.getElementsByName("image-filter")[0];
+  image2.src = realimage.options[realimage.selectedIndex].value;
+}
 
-        reader.readAsDataURL(input.files[0]);
-    }
+function setFilter(filteredImage) {
+  var image = document.getElementsByName("image-filter")[0];
+  image.style.filter = filteredImage.options[filteredImage.selectedIndex].value;
 }
