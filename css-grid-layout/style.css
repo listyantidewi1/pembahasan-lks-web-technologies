@@ -1,84 +1,95 @@
-.item1 {
-  grid-area: side-title;
-  background-color: yellow;
-}
-.item2 {
-  grid-area: nav1;
-  background-color: pink;
-}
-.item3 {
-  grid-area: nav2;
-  background-color: pink;
-}
-.item4 {
-  grid-area: nav3;
-  background-color: pink;
-}
-.item-main1 {
-  display: grid;
-  grid-area: main1;
-}
-.item-main2 {
-  display: grid;
-  grid-area: main2;
+* {
+  box-sizing: border-box;
 }
 
-.item5 {
-  grid-area: post-title;
+.wrapper-container {
+  display: grid;
+  grid-template-rows: [row1-start] 10% [row1-end row2-start] 80% [row2-end row3-start] 10% [row3-end];
+  column-gap: 3px;
+  row-gap: 3px;
+  height: 800px;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: [column1] 50% [column2] 16.5% [column3] 16.5% [column4] 16.5% [end];
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.main-wrapper-container {
+  display: grid;
+  grid-template-columns: [column1] 80% [column2] 20% [end];
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.content-container {
+  display: grid;
+  grid-template-rows: [row1-start] 25% [row1-end row2-start] 75% [row2-end];
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.side-bar-container {
+  display: grid;
+  grid-template-rows: [row1-start] 33% [row1-end row2-start] 33% [row2-end row3-start] 33% [row3-end];
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.post-title {
+  
   background-color: lightblue;
 }
 
-.item6{
-  grid-area: side-bar;
+.content-container-lower {
+  display: grid;
+  grid-template-columns: [column1] 40% [column2] 60% [end];
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.post-meta {
+  background-color: lightgreen;
+  
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: [row1-start] 50% [row1-end row2-start] 50% [row2-end];
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.main-content-item {
+  background-color: lightgrey;
+}
+
+.main-content-image {
+  background-color: yellow;
+}
+
+.side-bar-item {
+  background-color: darkorange;
+}
+
+.ads {
+  background-color: green;
+}
+
+.other-stuff {
+  background-color: magenta;
+}
+
+.side-title-item {
   background-color: orange;
 }
-.item7{
-  grid-area: ads;
-  background-color: darkgreen;
+
+.nav-item {
+  background-color: lightpink;
 }
 
-.item8{
-  grid-area: other-stuff;
-  background-color: purple;
-}
-
-
-.grid-container-top {
-  display: grid;
-  grid-template-areas: "side-title side-title side-title nav1 nav2 nav3";
-  grid-gap: 10px;
-
-  /*padding: 10px;*/
-}
-
-.grid-container-top > div {
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-.grid-container-main {
-  display: grid;
-  grid-template-areas: "main1 main1 main1 main2 main2";
-  grid-gap: 10px;
-
-  padding-top: 10px;
-}
-
-.grid-container-main > div {
-  /*padding: 20px 0;*/
-  font-size: 30px;
-}
-
-.grid-container-main1 {
-  display: grid;
-  grid-template-areas: "post-title post-title post-title post-title";
-
-  /*padding: 10px;*/
-}
-
-.grid-container-main2 {
-  display: grid;
-  grid-template-areas: "side-bar ads other-stuff";
-
-  /*padding: 10px;*/
+.footer {
+  background-color: darkslategrey;
 }
